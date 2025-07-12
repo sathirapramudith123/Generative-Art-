@@ -1,0 +1,143 @@
+.art-generator {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.art-generator h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.upload-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.upload-section input {
+  padding: 10px;
+  border: 2px dashed #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.workspace {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.image-preview {
+  flex: 1;
+  border: 1px solid #eee;
+  padding: 10px;
+  background: #f9f9f9;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.image-preview img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.controls {
+  flex: 1;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.controls h3 {
+  margin-top: 0;
+  color: #444;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.control-group {
+  margin-bottom: 15px;
+}
+
+.control-group label {
+  display: inline-block;
+  width: 100px;
+  font-weight: bold;
+  color: #666;
+}
+
+.control-group input[type="range"] {
+  width: 200px;
+  margin-right: 10px;
+}
+
+.control-group span {
+  display: inline-block;
+  width: 50px;
+  text-align: right;
+}
+
+.action-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+}
+
+.action-buttons button {
+  padding: 10px 15px;
+  background: #4a89dc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.action-buttons button:hover {
+  background: #3b7dd8;
+}
+
+.saved-styles {
+  margin-top: 40px;
+}
+
+.saved-styles h3 {
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.style-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.style-thumbnail {
+  cursor: pointer;
+  border: 1px solid #ddd;
+  padding: 5px;
+  background: white;
+  border-radius: 4px;
+  transition: transform 0.2s;
+}
+
+.style-thumbnail:hover {
+  transform: scale(1.05);
+}
+
+.style-thumbnail img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+.style-info {
+  text-align: center;
+  font-size: 0.9em;
+  color: #666;
+}
